@@ -1,0 +1,22 @@
+#page-homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#page-homepage .row {
+    justify-content: center;
+}
+
+#page-homepage .card .card-header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#page-homepage .card .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

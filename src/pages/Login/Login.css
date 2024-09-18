@@ -1,0 +1,42 @@
+#page-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#page-login .row {
+    justify-content: center;
+}
+
+#page-login .card .card-header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#page-login .card .card-body h4 {
+    text-align: center;
+    font-weight: 700;
+}
+
+#page-login .card .card-body p {
+    text-align: center;
+}
+
+#page-login .input-group-text {
+    cursor: pointer;
+}
+
+#page-login .extra-link {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#page-login .extra-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}

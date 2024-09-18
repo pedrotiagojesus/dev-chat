@@ -1,0 +1,42 @@
+#page-sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#page-sign-up .row {
+    justify-content: center;
+}
+
+#page-sign-up .card .card-header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#page-sign-up .card .card-body h4 {
+    text-align: center;
+    font-weight: 700;
+}
+
+#page-sign-up .card .card-body p {
+    text-align: center;
+}
+
+#page-sign-up .input-group-text {
+    cursor: pointer;
+}
+
+#page-sign-up .extra-link {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#page-sign-up .extra-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}

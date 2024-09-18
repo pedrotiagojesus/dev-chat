@@ -1,0 +1,51 @@
+:root {
+    --bs-body-bg: #fafbfe;
+    --bs-body-font-size: 0.95rem;
+    --bs-body-font-family: "Nunito";
+
+    --bs-border-radius: 0.25rem;
+}
+
+/* CARD */
+.card {
+    --bs-card-cap-bg: #412f44;
+    --bs-card-cap-color: #fff;
+    --bs-card-border-width: 0;
+    --bs-card-bg: #f4f7fc;
+    --bs-card-color: #6c757d;
+    --bs-card-spacer-x: 2.25rem;
+    --bs-card-spacer-y: 2.25rem;
+}
+
+/* BUTTON */
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #412f44;
+    --bs-btn-border-color: #412f44;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #412f44dc;
+    --bs-btn-hover-border-color: #412f44dc;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #412f44dc;
+    --bs-btn-active-border-color: #412f44dc;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #412f44;
+    --bs-btn-disabled-border-color: #412f44;
+}
+
+/* FORM */
+label {
+    font-weight: 600;
+}
+
+.form-control {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.9rem;
+}
+
+.form-control:focus {
+    border-color: var(--bs-border-color);
+    box-shadow: none;
+}

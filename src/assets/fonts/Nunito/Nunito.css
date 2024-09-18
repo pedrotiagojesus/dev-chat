@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Nunito";
+    font-weight: 100;
+    font-style: normal;
+    src: local("Nunito"), url(./static/Nunito-ExtraLight.ttf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 300;
+    font-style: normal;
+    src: local("Nunito"), url(./static/Nunito-Light.ttf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Nunito"), url(./static/Nunito-Regular.ttf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 500;
+    font-style: normal;
+    src: local("Nunito"), url(./static/Nunito-Medium.ttf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-style: normal;
+    src: local("Nunito"), url(./static/Nunito-Bold.otf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 900;
+    font-style: normal;
+    src: local("Nunito"), url(./static/Nunito-ExtraBold.ttf) format("opentype");
+    font-display: swap;
+}
+
+/* Italic */
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 100;
+    font-style: italic;
+    src: local("Nunito"),
+        url(./static/Nunito-ExtraLightItalic.ttf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 300;
+    font-style: italic;
+    src: local("Nunito"),
+        url(./static/Nunito-LightItalic.ttf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-style: italic;
+    src: local("Nunito"), url(./static/Nunito-Italic.ttf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 500;
+    font-style: italic;
+    src: local("Nunito"), url(./static/Nunito-Italic.otf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-style: italic;
+    src: local("Nunito"), url(./static/Nunito-BoldItalic.ttf) format("opentype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-weight: 900;
+    font-style: italic;
+    src: local("Nunito"),
+        url(./static/Nunito-ExtraBoldItalic.ttf) format("opentype");
+    font-display: swap;
+}

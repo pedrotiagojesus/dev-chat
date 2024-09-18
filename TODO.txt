@@ -1,0 +1,9 @@
+Mensagem de logout.
+
+Com login:
+* Header:
+    * Logotipo´
+    * Logout
+* Mensagens
+* Input
+* Botao para enviar

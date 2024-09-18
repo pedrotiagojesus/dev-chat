@@ -1,17 +1,17 @@
 // CSS
 import "./Dashboard.css";
 
-// Hooks
-import { useAuthentication } from "../../hooks/firebase/useAuthentication";
+// Components
+import BackgroundAnimated from "../../components/BackgroundAnimated/BackgroundAnimated";
+import Channel from "../../components/Channel/Channel";
 
 const Dashboard = () => {
-    const { logout } = useAuthentication();
-
     return (
-        <div>
-            <button className="btn btn-danger" onClick={logout}>
-                Logout
-            </button>
+        <div id="dashboard">
+            <BackgroundAnimated />
+            <div className="container">
+                <Channel />
+            </div>
         </div>
     );
 };

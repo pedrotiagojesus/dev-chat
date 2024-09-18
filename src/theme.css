@@ -4,6 +4,8 @@
     --bs-body-font-family: "Nunito";
 
     --bs-border-radius: 0.25rem;
+
+    --theme-header-height: 56px;
 }
 
 /* CARD */

@@ -1,0 +1,7 @@
+#dashboard {
+    height: calc(100vh - var(--theme-header-height));
+}
+
+#dashboard .area {
+    height: 100%;
+}

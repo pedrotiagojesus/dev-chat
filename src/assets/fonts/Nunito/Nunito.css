@@ -2,7 +2,7 @@
     font-family: "Nunito";
     font-weight: 100;
     font-style: normal;
-    src: local("Nunito"), url(./static/Nunito-ExtraLight.ttf) format("opentype");
+    src: local("Nunito"), url(./Nunito-ExtraLight.ttf) format("opentype");
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-family: "Nunito";
     font-weight: 300;
     font-style: normal;
-    src: local("Nunito"), url(./static/Nunito-Light.ttf) format("opentype");
+    src: local("Nunito"), url(./Nunito-Light.ttf) format("opentype");
     font-display: swap;
 }
 
@@ -18,7 +18,7 @@
     font-family: "Nunito";
     font-weight: 400;
     font-style: normal;
-    src: local("Nunito"), url(./static/Nunito-Regular.ttf) format("opentype");
+    src: local("Nunito"), url(./Nunito-Regular.ttf) format("opentype");
     font-display: swap;
 }
 
@@ -26,7 +26,7 @@
     font-family: "Nunito";
     font-weight: 500;
     font-style: normal;
-    src: local("Nunito"), url(./static/Nunito-Medium.ttf) format("opentype");
+    src: local("Nunito"), url(./Nunito-Medium.ttf) format("opentype");
     font-display: swap;
 }
 
@@ -34,7 +34,7 @@
     font-family: "Nunito";
     font-weight: 700;
     font-style: normal;
-    src: local("Nunito"), url(./static/Nunito-Bold.otf) format("opentype");
+    src: local("Nunito"), url(./Nunito-Bold.ttf) format("opentype");
     font-display: swap;
 }
 
@@ -42,7 +42,7 @@
     font-family: "Nunito";
     font-weight: 900;
     font-style: normal;
-    src: local("Nunito"), url(./static/Nunito-ExtraBold.ttf) format("opentype");
+    src: local("Nunito"), url(./Nunito-ExtraBold.ttf) format("opentype");
     font-display: swap;
 }
 
@@ -52,8 +52,7 @@
     font-family: "Nunito";
     font-weight: 100;
     font-style: italic;
-    src: local("Nunito"),
-        url(./static/Nunito-ExtraLightItalic.ttf) format("opentype");
+    src: local("Nunito"), url(./Nunito-ExtraLightItalic.ttf) format("opentype");
     font-display: swap;
 }
 
@@ -61,8 +60,7 @@
     font-family: "Nunito";
     font-weight: 300;
     font-style: italic;
-    src: local("Nunito"),
-        url(./static/Nunito-LightItalic.ttf) format("opentype");
+    src: local("Nunito"), url(./Nunito-LightItalic.ttf) format("opentype");
     font-display: swap;
 }
 
@@ -70,7 +68,7 @@
     font-family: "Nunito";
     font-weight: 400;
     font-style: italic;
-    src: local("Nunito"), url(./static/Nunito-Italic.ttf) format("opentype");
+    src: local("Nunito"), url(./Nunito-Italic.ttf) format("opentype");
     font-display: swap;
 }
 
@@ -78,7 +76,7 @@
     font-family: "Nunito";
     font-weight: 500;
     font-style: italic;
-    src: local("Nunito"), url(./static/Nunito-Italic.otf) format("opentype");
+    src: local("Nunito"), url(./Nunito-Italic.otf) format("opentype");
     font-display: swap;
 }
 
@@ -86,7 +84,7 @@
     font-family: "Nunito";
     font-weight: 700;
     font-style: italic;
-    src: local("Nunito"), url(./static/Nunito-BoldItalic.ttf) format("opentype");
+    src: local("Nunito"), url(./Nunito-BoldItalic.ttf) format("opentype");
     font-display: swap;
 }
 
@@ -94,7 +92,6 @@
     font-family: "Nunito";
     font-weight: 900;
     font-style: italic;
-    src: local("Nunito"),
-        url(./static/Nunito-ExtraBoldItalic.ttf) format("opentype");
+    src: local("Nunito"), url(./Nunito-ExtraBoldItalic.ttf) format("opentype");
     font-display: swap;
 }

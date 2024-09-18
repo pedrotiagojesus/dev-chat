@@ -7,3 +7,5 @@ Com login:
 * Mensagens
 * Input
 * Botao para enviar
+
+Mover o background image para o App.tsx

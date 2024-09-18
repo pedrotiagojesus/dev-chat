@@ -1,0 +1,19 @@
+header {
+    height: var(--theme-header-height);
+    background-color: #333144;
+}
+
+header .navbar {
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-font-size: 1.25rem;
+}
+
+header .navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+header .navbar .btn-logout {
+    color: #fff;
+}

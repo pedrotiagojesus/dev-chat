@@ -15,13 +15,8 @@ import "./theme.css";
 // Pages
 import App from "./App.tsx";
 
-// Provider
-import { AuthProvider } from "./provider/AuthProvider.tsx";
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
-        <AuthProvider>
-            <App />
-        </AuthProvider>
+        <App />
     </React.StrictMode>
 );

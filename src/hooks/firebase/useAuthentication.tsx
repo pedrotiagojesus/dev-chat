@@ -10,13 +10,13 @@ import {
     sendPasswordResetEmail,
 } from "firebase/auth";
 
+import { auth } from "../../firebase/config";
+
 // Schemas
 import { SignUpFormSchema } from "../../schemas/signUpFormSchema";
 import { RecoverPasswordFormSchema } from "../../schemas/recoverPasswordFormSchema";
 
 export const useAuthentication = () => {
-    const auth = getAuth();
-
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState("");
     const [error, setError] = useState("");
@@ -64,6 +64,7 @@ export const useAuthentication = () => {
     };
 
     return {
+        auth,
         createUser,
         logout,
         sendPasswordReset,

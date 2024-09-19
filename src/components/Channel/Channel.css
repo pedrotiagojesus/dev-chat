@@ -1,4 +1,40 @@
-#channel {
-    position: relative;
-    padding-block: 1rem;
+#channel.card {
+    --bs-card-spacer-x: 0;
+    --bs-card-spacer-y: 0;
+
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-padding-y: 1rem;
+
+    --bs-card-cap-bg: #f4f7fc;
+
+    height: 100%;
+}
+
+#channel .card-body {
+    overflow: auto;
+}
+
+#channel .beginning {
+    text-align: center;
+    padding-block: 2rem;
+    border-bottom: 1px solid #33314450;
+}
+
+#channel .beginning p {
+    margin-bottom: 0;
+}
+
+#channel .card-footer .input-group {
+    gap: 1rem;
+}
+
+#channel .card-footer input {
+    border-radius: 3rem;
+    background-color: #33314420;
+}
+
+#channel .card-footer button {
+    background-color: #33314420;
+    border-width: 0;
+    border-radius: 3rem;
 }

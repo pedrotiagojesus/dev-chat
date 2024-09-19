@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <header>
             <nav className="navbar fixed-top">
-                <div className="container-fluid">
+                <div className="container">
                     <a className="navbar-brand" href="#">
                         <i className="fa-solid fa-code"></i>
                         <span>Dev Chat</span>

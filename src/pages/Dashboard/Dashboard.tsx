@@ -7,7 +7,7 @@ import Channel from "../../components/Channel/Channel";
 const Dashboard = () => {
     return (
         <div id="dashboard">
-            <div className="container">
+            <div className="container h-100">
                 <Channel />
             </div>
         </div>

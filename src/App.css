@@ -3,9 +3,12 @@ main {
 }
 
 main .content {
+    height: 100%;
     padding-top: calc(var(--theme-header-height) + 2rem);
+    padding-bottom: 2rem;
 }
 
 main.no-header .content {
     padding-top: 0;
+    padding-bottom: 0;
 }

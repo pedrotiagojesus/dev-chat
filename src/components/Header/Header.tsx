@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="navbar">
+            <nav className="navbar fixed-top">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
                         <i className="fa-solid fa-code"></i>

@@ -1,0 +1,11 @@
+main {
+    height: 100vh;
+}
+
+main .content {
+    padding-top: calc(var(--theme-header-height) + 2rem);
+}
+
+main.no-header .content {
+    padding-top: 0;
+}

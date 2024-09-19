@@ -13,9 +13,6 @@ import { useLoginForm } from "../../hooks/useLoginForm";
 // Utils
 import { signIn } from "../../utils/Firebase";
 
-// Components
-import BackgroundAnimated from "../../components/BackgroundAnimated/BackgroundAnimated";
-
 // Sweetalert 2
 import Swal from "sweetalert2";
 
@@ -53,7 +50,6 @@ const Login = () => {
 
     return (
         <div id="page-login">
-            <BackgroundAnimated />
             <div className="container">
                 <div className="row">
                     <div className="col-xl-5">

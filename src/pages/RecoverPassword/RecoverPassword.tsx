@@ -11,9 +11,6 @@ import { RecoverPasswordFormSchema } from "../../schemas/recoverPasswordFormSche
 import { useRecoverPasswordForm } from "../../hooks/useRecoverPasswordForm";
 import { useAuthentication } from "../../hooks/firebase/useAuthentication";
 
-// Components
-import BackgroundAnimated from "../../components/BackgroundAnimated/BackgroundAnimated";
-
 // Sweetalert 2
 import Swal from "sweetalert2";
 
@@ -39,7 +36,6 @@ const RecoverPassword = () => {
 
     return (
         <div id="page-recover-password">
-            <BackgroundAnimated />
             <div className="container">
                 <div className="row">
                     <div className="col-xl-5">

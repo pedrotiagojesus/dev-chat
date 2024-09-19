@@ -13,6 +13,7 @@ import { useAuthentication } from "./hooks/firebase/useAuthentication";
 
 // Components
 import Header from "./components/Header/Header";
+import BackgroundAnimated from "./components/BackgroundAnimated/BackgroundAnimated";
 
 // Pages
 import Homepage from "./pages/Homepage/Homepage";
@@ -42,53 +43,56 @@ function App() {
             <AuthProvider value={{ user }}>
                 <BrowserRouter>
                     {user ? <Header /> : ""}
-                    <main>
-                        <Routes>
-                            <Route
-                                path="/dev-chat"
-                                element={<Homepage />}
-                            ></Route>
-                            <Route
-                                path="/dev-chat/login"
-                                element={
-                                    !user ? (
-                                        <Login />
-                                    ) : (
-                                        <Navigate to="/dev-chat/dashboard" />
-                                    )
-                                }
-                            ></Route>
-                            <Route
-                                path="/dev-chat/sign-up"
-                                element={
-                                    !user ? (
-                                        <SignUp />
-                                    ) : (
-                                        <Navigate to="/dev-chat/dashboard" />
-                                    )
-                                }
-                            ></Route>
-                            <Route
-                                path="/dev-chat/recover-password"
-                                element={
-                                    !user ? (
-                                        <RecoverPassword />
-                                    ) : (
-                                        <Navigate to="/dev-chat/dashboard" />
-                                    )
-                                }
-                            ></Route>
-                            <Route
-                                path="/dev-chat/dashboard"
-                                element={
-                                    user ? (
-                                        <Dashboard />
-                                    ) : (
-                                        <Navigate to="/dev-chat/login" />
-                                    )
-                                }
-                            ></Route>
-                        </Routes>
+                    <main className={user ? "" : "no-header"}>
+                        <BackgroundAnimated />
+                        <div className="content">
+                            <Routes>
+                                <Route
+                                    path="/dev-chat"
+                                    element={<Homepage />}
+                                ></Route>
+                                <Route
+                                    path="/dev-chat/login"
+                                    element={
+                                        !user ? (
+                                            <Login />
+                                        ) : (
+                                            <Navigate to="/dev-chat/dashboard" />
+                                        )
+                                    }
+                                ></Route>
+                                <Route
+                                    path="/dev-chat/sign-up"
+                                    element={
+                                        !user ? (
+                                            <SignUp />
+                                        ) : (
+                                            <Navigate to="/dev-chat/dashboard" />
+                                        )
+                                    }
+                                ></Route>
+                                <Route
+                                    path="/dev-chat/recover-password"
+                                    element={
+                                        !user ? (
+                                            <RecoverPassword />
+                                        ) : (
+                                            <Navigate to="/dev-chat/dashboard" />
+                                        )
+                                    }
+                                ></Route>
+                                <Route
+                                    path="/dev-chat/dashboard"
+                                    element={
+                                        user ? (
+                                            <Dashboard />
+                                        ) : (
+                                            <Navigate to="/dev-chat/login" />
+                                        )
+                                    }
+                                ></Route>
+                            </Routes>
+                        </div>
                     </main>
                 </BrowserRouter>
             </AuthProvider>

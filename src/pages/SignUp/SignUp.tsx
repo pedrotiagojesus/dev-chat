@@ -11,9 +11,6 @@ import { SignUpFormSchema } from "../../schemas/signUpFormSchema";
 import { useSignUpForm } from "../../hooks/useSignUpForm";
 import { useAuthentication } from "../../hooks/firebase/useAuthentication";
 
-// Components
-import BackgroundAnimated from "../../components/BackgroundAnimated/BackgroundAnimated";
-
 // Sweetalert 2
 import Swal from "sweetalert2";
 
@@ -50,7 +47,6 @@ const SignUp = () => {
 
     return (
         <div id="page-sign-up">
-            <BackgroundAnimated />
             <div className="container">
                 <div className="row">
                     <div className="col-xl-5">

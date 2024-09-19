@@ -3,13 +3,9 @@ import { Link } from "react-router-dom";
 // CSS
 import "./Homepage.css";
 
-// Components
-import BackgroundAnimated from "../../components/BackgroundAnimated/BackgroundAnimated";
-
 const Homepage = () => {
     return (
         <div id="page-homepage">
-            <BackgroundAnimated />
             <div className="container">
                 <div className="row">
                     <div className="col-xl-5">

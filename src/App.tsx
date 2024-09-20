@@ -49,7 +49,13 @@ function App() {
                             <Routes>
                                 <Route
                                     path="/dev-chat"
-                                    element={<Homepage />}
+                                    element={
+                                        !user ? (
+                                            <Homepage />
+                                        ) : (
+                                            <Navigate to="/dev-chat/dashboard" />
+                                        )
+                                    }
                                 ></Route>
                                 <Route
                                     path="/dev-chat/login"

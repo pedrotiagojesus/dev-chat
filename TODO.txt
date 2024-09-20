@@ -1,11 +1,9 @@
 Mensagem de logout.
 
-Com login:
-* Header:
-    * Logotipo´
-    * Logout
-* Mensagens
-* Input
-* Botao para enviar
+A página de homepage não está a verificar se o utilizador tem o login ou não.
 
-Mover o background image para o App.tsx
+Alterar o CSS do sweetalert.
+
+Alterar o CSS do botão de enviar mensagens.~
+
+Alterar o login para GoogleLogin

@@ -5,7 +5,7 @@ main {
 main .content {
     height: 100%;
     padding-top: calc(var(--theme-header-height) + 1rem);
-    padding-bottom: 2rem;
+    padding-bottom: calc(var(--theme-footer-height) + 1rem);
 }
 
 main.no-header .content {

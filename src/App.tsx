@@ -15,6 +15,7 @@ import { auth } from "./utils/Firebase";
 import Header from "./components/Header/Header";
 import BackgroundAnimated from "./components/BackgroundAnimated/BackgroundAnimated";
 import Loader from "./components/Loader/Loader";
+import Footer from "./components/Footer/Footer";
 
 // Pages
 import Homepage from "./pages/Homepage/Homepage";
@@ -67,6 +68,7 @@ function App() {
                             </Routes>
                         </div>
                     </main>
+                    <Footer />
                 </BrowserRouter>
             </AuthProvider>
         </>

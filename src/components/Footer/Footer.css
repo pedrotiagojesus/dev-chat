@@ -1,0 +1,14 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    padding-block: 0.25rem;
+    height: var(--theme-footer-height);
+}
+
+footer a {
+    color: #fff;
+}

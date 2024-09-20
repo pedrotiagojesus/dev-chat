@@ -65,9 +65,10 @@ const Channel = () => {
                         className="form-control"
                         value={newMessage}
                         onChange={(e) => setNewMessage(e.target.value)}
+                        placeholder="Message..."
                     />
                     <button
-                        className="btn"
+                        className="btn btn-primary"
                         type="submit"
                         disabled={!newMessage}
                     >

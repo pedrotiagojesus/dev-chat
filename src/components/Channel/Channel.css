@@ -34,7 +34,6 @@
 }
 
 #channel .card-footer button {
-    background-color: #33314420;
-    border-width: 0;
+    --bs-btn-border-width: 0;
     border-radius: 3rem;
 }

@@ -14,6 +14,7 @@ import { useAuthentication } from "./hooks/firebase/useAuthentication";
 // Components
 import Header from "./components/Header/Header";
 import BackgroundAnimated from "./components/BackgroundAnimated/BackgroundAnimated";
+import Loader from "./components/Loader/Loader";
 
 // Pages
 import Homepage from "./pages/Homepage/Homepage";
@@ -32,8 +33,10 @@ function App() {
     }, [auth]);
 
     if (loadingUser) {
-        return <p>Carregando...</p>;
+        return <Loader />;
     }
+
+    return <Loader />;
 
     return (
         <>

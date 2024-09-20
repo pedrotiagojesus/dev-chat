@@ -25,7 +25,9 @@ const formatDate = (date) => {
 const Message = ({ message }: Props) => {
     return (
         <div className="message">
-            <img src={message.photoURL} alt="avatar" />
+            <div>
+                <img src={message.photoURL} alt="avatar" />
+            </div>
             <div>
                 <div className="identification">
                     <span className="name">{message.displayName}</span>

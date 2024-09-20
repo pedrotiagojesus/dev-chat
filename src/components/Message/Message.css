@@ -1,12 +1,12 @@
 .message {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.25rem;
     padding: 2rem 1rem;
 }
 
 .message img {
     border-radius: 50%;
-    width: 5rem;
+    width: 3rem;
 }
 
 .message .identification {

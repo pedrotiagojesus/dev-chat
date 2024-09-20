@@ -3,6 +3,6 @@ export type MessageSchema = {
     text: string;
     uid: string;
     displayName: string;
-    photoURL: string | null;
+    photoURL: string;
     createdAt?: string;
 };

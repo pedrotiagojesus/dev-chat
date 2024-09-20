@@ -10,8 +10,11 @@
     height: 100%;
 }
 
-#channel .card-body {
+#channel .timeline {
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 #channel .beginning {

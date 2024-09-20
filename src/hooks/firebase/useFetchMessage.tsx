@@ -28,10 +28,7 @@ export const useFetchMessage = () => {
             const collectionRef = await collection(db, "message");
 
             try {
-                let q = await query(
-                    collectionRef,
-                    orderBy("createdAt", "desc")
-                );
+                let q = await query(collectionRef, orderBy("createdAt", "asc"));
 
                 await onSnapshot(q, (querySnapshot) => {
                     setMessageArr(

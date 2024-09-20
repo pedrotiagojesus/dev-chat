@@ -1,4 +1,0 @@
-Mensagem de login.
-Mensagem de logout.
-
-Alterar o CSS do sweetalert.

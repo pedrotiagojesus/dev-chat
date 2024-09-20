@@ -3,9 +3,9 @@ import {
     getAuth,
     signInWithEmailAndPassword,
     createUserWithEmailAndPassword,
-    updateProfile,
+    GoogleAuthProvider,
     signOut,
-    sendPasswordResetEmail,
+    signInWithPopup,
 } from "firebase/auth";
 
 export async function createNewUser(email: string, password: string) {
@@ -19,6 +19,18 @@ export async function signIn(email: string, password: string) {
 }
 
 export async function logOut() {
-    // const auth = getAuth();
-    return await signOut();
+    const auth = getAuth();
+    return await signOut(auth);
 }
+
+export const signInWithGoogle = async () => {
+    const auth = getAuth();
+    const provider = new GoogleAuthProvider();
+
+    // Start sign in process
+    try {
+        await signInWithPopup(auth, provider);
+    } catch (error) {
+        console.log(error.message);
+    }
+};

@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
-
 // CSS
 import "./Homepage.css";
+
+// Firebase
+import { signInWithGoogle } from "../../utils/Firebase";
 
 const Homepage = () => {
     return (
@@ -23,18 +24,13 @@ const Homepage = () => {
                                     sed odio!
                                 </p>
                                 <div className="button-group">
-                                    <Link
+                                    <button
                                         className="btn btn-primary"
-                                        to="/dev-chat/login"
+                                        onClick={signInWithGoogle}
                                     >
-                                        Login
-                                    </Link>
-                                    <Link
-                                        className="btn btn-primary"
-                                        to="/dev-chat/register"
-                                    >
-                                        Register
-                                    </Link>
+                                        <i className="fa-brands fa-google me-2"></i>
+                                        Sign in with Google
+                                    </button>
                                 </div>
                             </div>
                         </div>

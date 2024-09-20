@@ -58,42 +58,12 @@ function App() {
                                     }
                                 ></Route>
                                 <Route
-                                    path="/dev-chat/login"
-                                    element={
-                                        !user ? (
-                                            <Login />
-                                        ) : (
-                                            <Navigate to="/dev-chat/dashboard" />
-                                        )
-                                    }
-                                ></Route>
-                                <Route
-                                    path="/dev-chat/sign-up"
-                                    element={
-                                        !user ? (
-                                            <SignUp />
-                                        ) : (
-                                            <Navigate to="/dev-chat/dashboard" />
-                                        )
-                                    }
-                                ></Route>
-                                <Route
-                                    path="/dev-chat/recover-password"
-                                    element={
-                                        !user ? (
-                                            <RecoverPassword />
-                                        ) : (
-                                            <Navigate to="/dev-chat/dashboard" />
-                                        )
-                                    }
-                                ></Route>
-                                <Route
                                     path="/dev-chat/dashboard"
                                     element={
                                         user ? (
                                             <Dashboard />
                                         ) : (
-                                            <Navigate to="/dev-chat/login" />
+                                            <Navigate to="/dev-chat" />
                                         )
                                     }
                                 ></Route>

@@ -10,7 +10,7 @@ import { MessageSchema } from "../../schemas/messageSchema";
 
 // Components
 import Message from "../Message/Message";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAuthValue } from "../../contexts/AuthContext";
 
 const Channel = () => {
@@ -38,19 +38,25 @@ const Channel = () => {
         }
     };
 
+    const timelineRef = useRef(null);
+
+    useEffect(() => {
+        if (timelineRef.current) {
+            timelineRef.current.scrollTop = timelineRef.current.scrollHeight;
+        }
+    }, [messageArr]);
+
     return (
         <div id="channel" className="card">
-            <div className="card-body">
-                <div className="timeline">
-                    <div className="beginning">
-                        <h1>Welcome to Dev Chat</h1>
-                        <p>This is beginning of this chat</p>
-                    </div>
-                    {messageArr &&
-                        messageArr.map((message: MessageSchema) => (
-                            <Message key={message.id} message={message} />
-                        ))}
+            <div className="card-body timeline" ref={timelineRef}>
+                <div className="beginning">
+                    <h1>Welcome to Dev Chat</h1>
+                    <p>This is beginning of this chat</p>
                 </div>
+                {messageArr &&
+                    messageArr.map((message: MessageSchema) => (
+                        <Message key={message.id} message={message} />
+                    ))}
             </div>
             <div className="card-footer">
                 <form className="input-group" onSubmit={(e) => handleSubmit(e)}>

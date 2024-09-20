@@ -8,8 +8,8 @@ import "./App.css";
 // Context
 import { AuthProvider } from "./contexts/AuthContext";
 
-// Hooks
-import { useAuthentication } from "./hooks/firebase/useAuthentication";
+// Utils
+import { auth } from "./utils/Firebase";
 
 // Components
 import Header from "./components/Header/Header";
@@ -22,7 +22,6 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
     const [user, setUser] = useState<null | User>();
-    const { auth } = useAuthentication();
 
     const loadingUser = user === undefined;
 

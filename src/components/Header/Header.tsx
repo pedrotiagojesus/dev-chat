@@ -1,12 +1,10 @@
 // CSS
 import "./Header.css";
 
-// Hooks
-import { useAuthentication } from "../../hooks/firebase/useAuthentication";
+// Utils
+import { logOut } from "../../utils/Firebase";
 
 const Header = () => {
-    const { logout } = useAuthentication();
-
     return (
         <header>
             <nav className="navbar fixed-top">
@@ -15,7 +13,7 @@ const Header = () => {
                         <i className="fa-solid fa-code"></i>
                         <span>Dev Chat</span>
                     </a>
-                    <button className="btn btn-logout" onClick={logout}>
+                    <button className="btn btn-logout" onClick={logOut}>
                         Logout
                     </button>
                 </div>

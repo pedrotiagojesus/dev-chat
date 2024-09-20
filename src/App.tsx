@@ -17,9 +17,6 @@ import BackgroundAnimated from "./components/BackgroundAnimated/BackgroundAnimat
 
 // Pages
 import Homepage from "./pages/Homepage/Homepage";
-import Login from "./pages/Login/Login";
-import SignUp from "./pages/SignUp/SignUp";
-import RecoverPassword from "./pages/RecoverPassword/RecoverPassword";
 import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {

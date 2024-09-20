@@ -1,7 +1,3 @@
 Mensagem de logout.
 
 Alterar o CSS do sweetalert.
-
-Alterar o CSS do botão de enviar mensagens.
-
-As mensagens mais recentes devem aparecer primeiro e o "Welcome to Dev Chat" deve ir para baixo.

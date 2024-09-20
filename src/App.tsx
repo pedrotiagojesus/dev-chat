@@ -36,8 +36,6 @@ function App() {
         return <Loader />;
     }
 
-    return <Loader />;
-
     return (
         <>
             <AuthProvider value={{ user }}>

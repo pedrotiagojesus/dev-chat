@@ -3,10 +3,11 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <footer>
-            Made with ♥ by{" "}
+            Made with <span className="heart">♥</span> by{" "}
             <a href="https://pedrotiagojesus.github.io/" target="_BLANK">
                 Pedro Jesus
-            </a>
+            </a>{" "}
+            © 2024
         </footer>
     );
 };

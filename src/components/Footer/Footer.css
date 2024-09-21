@@ -12,3 +12,7 @@ footer {
 footer a {
     color: #fff;
 }
+
+footer .heart {
+    color: var(--bs-dangero);
+}

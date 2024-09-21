@@ -2,13 +2,13 @@ main {
     height: 100vh;
 }
 
-main .content {
+main > .content {
     height: 100%;
     padding-top: calc(var(--theme-header-height) + 1rem);
     padding-bottom: calc(var(--theme-footer-height) + 1rem);
 }
 
-main.no-header .content {
+main.no-header > .content {
     padding-top: 0;
     padding-bottom: 0;
 }

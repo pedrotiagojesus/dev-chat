@@ -6,6 +6,9 @@ import "./Message.css";
 // Schema
 import { MessageSchema } from "../../schemas/messageSchema";
 
+// Context
+import { useAuthValue } from "../../contexts/AuthContext";
+
 interface Props {
     message: MessageSchema;
 }
@@ -23,12 +26,14 @@ const formatDate = (date) => {
 };
 
 const Message = ({ message }: Props) => {
+    const { user } = useAuthValue();
+
     return (
-        <div className="message">
-            <div>
+        <div className={`message ${user.uid === message.uid ? "owner" : ""}`}>
+            <div className="avatar">
                 <img src={message.photoURL} alt="avatar" />
             </div>
-            <div>
+            <div className="content shadow-sm">
                 <div className="identification">
                     <span className="name">{message.displayName}</span>
                     <span className="date">

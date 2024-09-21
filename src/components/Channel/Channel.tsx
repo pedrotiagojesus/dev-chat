@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+
 // CSS
 import "./Channel.css";
 
@@ -10,7 +12,8 @@ import { MessageSchema } from "../../schemas/messageSchema";
 
 // Components
 import Message from "../Message/Message";
-import { useEffect, useRef, useState } from "react";
+
+// Context
 import { useAuthValue } from "../../contexts/AuthContext";
 
 const Channel = () => {

@@ -21,6 +21,10 @@
 }
 
 /* BUTTON */
+.btn {
+    --bs-btn-active-border-color: transparent;
+}
+
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #412f44;
@@ -51,4 +55,22 @@ label {
 .form-control:focus {
     border-color: var(--bs-border-color);
     box-shadow: none;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    --bs-dropdown-padding-y: 0;
+    --bs-dropdown-item-padding-y: 0.5rem;
+    --bs-border-radius: 0;
+    --bs-border-color-translucent: transparent;
+    --bs-dropdown-link-color: #6c757d;
+    --bs-dropdown-bg: #fff;
+}
+
+.dropdown-item {
+    --bs-dropdown-link-active-bg: #fafbfe;
+    --bs-dropdown-link-active-color: #6c757d;
+
+    font-weight: 500;
+    transition: all ease-out 0.25s;
 }
